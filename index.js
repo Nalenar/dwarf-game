@@ -17,6 +17,8 @@ const backgroundLevel1 = new Sprite({
 
 const player = new Player({
   collisionBlocks,
+  imageSrc: "assets/img/king/idle.png",
+  frameRate: 11,
 });
 
 const keys = {
@@ -32,7 +34,7 @@ const keys = {
 };
 function animate() {
   window.requestAnimationFrame(animate);
-  c.fillStyle = "white";
+  c.fillStyle = "black";
   c.fillRect(0, 0, canvas.width, canvas.height);
 
   backgroundLevel1.draw();
