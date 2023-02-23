@@ -1,6 +1,7 @@
 window.addEventListener("keydown", (event) => {
   if (player.preventInput) return;
-  switch (event.key) {
+  
+  switch (event.key.toLowerCase()) {
     // jump
     case "w":
       for (let i = 0; i < doors.length; i++) {
@@ -40,7 +41,7 @@ window.addEventListener("keydown", (event) => {
 });
 
 window.addEventListener("keyup", (event) => {
-  switch (event.key) {
+  switch (event.key.toLowerCase()) {
     case "a":
       keys.a.pressed = false;
       break;
