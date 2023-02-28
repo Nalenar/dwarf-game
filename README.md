@@ -1,1 +1,1 @@
-This is web game with multi-doors features
+This is web game with multi-room features
